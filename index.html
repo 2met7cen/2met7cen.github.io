@@ -1,1 +1,70 @@
-##Hello!
+<!DOCTYPE html>
+<html>
+<head>
+  <title>XSTYLEX</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      margin-left: 100px;
+      max-width: 600px;
+    }
+    .text-box {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 40px; /* место под кнопки */
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column; /* кнопки вертикально */
+      gap: 20px; /* расстояние между кнопками */
+    }
+    .button {
+      background: #444; /* серый цвет */
+      color: white;
+      padding: 15px 30px;
+      margin: 0px 0px;
+      border-radius: 30px; /* овальные кнопки */
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none; /* убираем подчёркивание */
+      display: inline-block;
+      width: 120px;
+      transition: background-color 0.4s ease; /* фиксированная ширина */
+      transition: transform 0.4s ease;
+      transition: all 0.4s ease;
+    }
+    .button:hover {
+      background: #FF5555;
+      /*transform: scale(1.2);/* чуть светлее при наведении */
+      transform: translateY(-5px);  /* вверх на 5px */
+      box-shadow: 0 10px 25px rgba(0,0,0,0.9);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text-box">
+      Hello. Here I'll be sharing my small projects, so I'm really glad you came to see what I'm working on.<br><br>
+      Here is my page for 3D projects:
+      <a href="https://www.artstation.com/workshop2met7cen" target="_blank">https://www.artstation.com/workshop2met7cen</a><br><br>
+      My email:
+      <a href="mailto:workshop2met7cen@gmail.com">workshop2met7cen@gmail.com</a>
+    </div>
+
+    <div class="buttons">
+      <a href="#" class="button">3D</a>
+      <a href="#" class="button">Email</a>
+    </div>
+  </div>
+</body>
+</html>
