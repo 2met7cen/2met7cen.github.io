@@ -1,59 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Моя витрина</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 50px;
-            font-family: Arial, sans-serif;
-            background: #f0f0f0;
-            min-height: 100vh;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .text-section {
-            width: 50%;
-            margin-right: auto; /* Выравнивание справа */
-            text-align: right;
-            font-size: 24px;
-            line-height: 1.4;
-            margin-bottom: 50px;
-        }
-        .buttons-section {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            align-items: flex-end; /* Кнопки справа */
-        }
-        .oval-button {
-            width: 120px;
-            height: 50px;
-            background: #007bff;
-            color: white;
-            border-radius: 25px; /* Полностью скругленные углы */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Моя витрина 3D проектов</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f9f9f9;
+    color: #222;
+  }
+  .container {
+    max-width: 600px; /* примерно половина экрана на обычных экранах */
+    margin: 0;
+    padding: 0;
+  }
+  .intro-text {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column; /* вертикально */
+    gap: 15px;
+  }
+  .button-oval {
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    padding: 14px 26px;
+    border-radius: 30px; /* овальные */
+    width: fit-content;
+    font-weight: bold;
+    position: relative;
+    transition: background-color 0.3s ease;
+    user-select: none;
+  }
+  .button-oval:hover {
+    background-color: #666;
+  }
+  .popup-info {
+    position: absolute;
+    left: 110%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #eee;
+    color: #111;
+    border-radius: 8px;
+    padding: 10px 16px;
+    white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  .button-oval:hover .popup-info {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  a.popup-link {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  a.popup-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Адаптив */
+  @media (max-width: 480px) {
+    .container {
+      max-width: 90vw;
+    }
+    .button-oval {
+      padding: 12px 20px;
+      font-size: 16px;
+    }
+    .popup-info {
+      left: 100%;
+      top: 120%;
+      transform: none;
+      white-space: normal;
+      width: max-content;
+      max-width: 250px;
+    }
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="text-section">
-            Hello. Here I'll be sharing my small projects, so I'm really glad you came to see what I'm working on.<br>
-            Here is my page for 3D projects: <a href="https://www.artstation.com/workshop2met7cen">ArtStation</a><br>
-            My email: <a href="mailto:workshop2met7cen@gmail.com">workshop2met7cen@gmail.com</a>
-        </div>
-        <div class="buttons-section">
-            <div class="oval-button">3D</div>
-            <div class="oval-button">Email</div>
-        </div>
+  <div class="container">
+    <div class="intro-text">
+      Hello. Here I’ll be sharing my small projects, so I’m really glad you came to see what I’m working on.<br />
+      Here is my page for 3D projects: 
+      <a href="https://www.artstation.com/workshop2met7cen" target="_blank" rel="noopener noreferrer">https://www.artstation.com/workshop2met7cen</a><br />
+      My email: 
+      <a href="mailto:workshop2met7cen@gmail.com">workshop2met7cen@gmail.com</a>
     </div>
+
+    <div class="buttons">
+      <div class="button-oval">
+        3D
+        <div class="popup-info">
+          <a class="popup-link" href="https://www.artstation.com/workshop2met7cen" target="_blank" rel="noopener noreferrer">My 3D Projects on ArtStation</a>
+        </div>
+      </div>
+      <div class="button-oval">
+        Email
+        <div class="popup-info">
+          <a class="popup-link" href="mailto:workshop2met7cen@gmail.com">workshop2met7cen@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
