@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Моя витрина</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .text-section {
+            width: 50%;
+            margin-left: auto; /* Выравнивание справа */
+            text-align: right;
+            font-size: 24px;
+            line-height: 1.4;
+            margin-bottom: 50px;
+        }
+        .buttons-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-end; /* Кнопки справа */
+        }
+        .oval-button {
+            width: 120px;
+            height: 50px;
+            background: #007bff;
+            color: white;
+            border-radius: 25px; /* Полностью скругленные углы */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-section">
+            Hello. Here I'll be sharing my small projects, so I'm really glad you came to see what I'm working on.<br>
+            Here is my page for 3D projects: <a href="https://www.artstation.com/workshop2met7cen">ArtStation</a><br>
+            My email: <a href="mailto:workshop2met7cen@gmail.com">workshop2met7cen@gmail.com</a>
+        </div>
+        <div class="buttons-section">
+            <div class="oval-button">3D</div>
+            <div class="oval-button">Email</div>
+        </div>
+    </div>
+</body>
+</html>
