@@ -15,7 +15,7 @@
   }
   
   .main-container {
-    margin-left: 100px; /* отступ слева */
+    margin-left: 100px;
     max-width: 700px;
   }
   
@@ -49,9 +49,10 @@
   
   .slide-button {
     position: relative;
-    display: inline-block;
-    padding: 16px 32px 16px 24px;
-    background: rgba(68, 68, 68, 0.9);
+    display: inline-flex;
+    align-items: center;
+    padding: 16px 32px;
+    background: #444;
     color: white;
     font-weight: 600;
     font-size: 18px;
@@ -59,67 +60,66 @@
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    user-select: none;
+    text-decoration: none;
+    transition: none; /* кнопка НЕ меняется */
   }
   
-  .slide-button:hover {
-    background: rgba(100, 100, 100, 0.95);
-    transform: translateX(8px);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-  }
-  
+  /* Продолжение выезжает из-под кнопки */
   .slide-button::after {
-    content: attr(data-text);
+    content: attr(data-slide);
     position: absolute;
-    right: -250px; /* изначально спрятан справа */
+    left: 100%; /* изначально справа от кнопки */
     top: 0;
-    background: rgba(0, 102, 204, 0.95);
+    height: 100%;
+    background: #0066cc;
     color: white;
-    padding: 16px 24px;
-    white-space: nowrap;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 16px;
-    border-radius: 0 30px 30px 0;
-    transition: right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    text-decoration: none;
+    border-radius: 0 40px 40px 0;
+    transform: translateX(-100%); /* спрятан */
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    white-space: nowrap;
+    box-shadow: 4px 0 20px rgba(0,102,204,0.4);
   }
   
   .slide-button:hover::after {
-    right: 0; /* выезжает из-под кнопки */
+    transform: translateX(0); /* выезжает слева→право */
   }
   
-  /* Специфичные тексты для кнопок */
-  .button-3d::after {
-    content: "My 3D Projects on ArtStation →";
+  /* Специфичные тексты */
+  .button-3d[data-slide="My 3D Projects on ArtStation"]::after {
+    content: "My 3D Projects on ArtStation";
   }
   
-  .button-email::after {
-    content: "workshop2met7cen@gmail.com →";
-  }
-  
-  .slide-button[data-href] {
-    text-decoration: none;
+  .button-email[data-slide="Send email"]::after {
+    content: "workshop2met7cen@gmail.com";
   }
   
   /* Адаптив */
   @media (max-width: 768px) {
     body { padding: 20px; }
     .main-container { margin-left: 20px; }
-    .intro-text { 
-      font-size: 18px; 
-      padding: 20px; 
-    }
-    .slide-button::after {
-      right: -200px;
-      padding: 14px 20px;
-      font-size: 15px;
-    }
+    .intro-text { font-size: 18px; padding: 20px; }
+    .slide-button::after { padding: 0 20px; font-size: 15px; }
   }
   
   @media (max-width: 480px) {
     .main-container { margin-left: 10px; }
     .intro-text { font-size: 16px; }
+    .slide-button::after {
+      position: absolute;
+      left: 0;
+      top: 110%;
+      width: 100%;
+      border-radius: 0 0 40px 40px;
+      transform: translateY(-100%);
+    }
+    .slide-button:hover::after {
+      transform: translateY(0);
+    }
   }
 </style>
 </head>
@@ -140,12 +140,14 @@
     <div class="buttons-container">
       <a href="https://www.artstation.com/workshop2met7cen" 
          target="_blank" rel="noopener noreferrer" 
-         class="slide-button button-3d">
+         class="slide-button button-3d"
+         data-slide="My 3D Projects on ArtStation">
         3D
       </a>
       
       <a href="mailto:workshop2met7cen@gmail.com" 
-         class="slide-button button-email">
+         class="slide-button button-email"
+         data-slide="Send email">
         Email
       </a>
     </div>
