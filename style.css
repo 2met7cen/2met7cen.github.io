@@ -1,5 +1,6 @@
 body {
   background-color: #444444;
+  color: #DDDDDD;
   font-family: Arial, sans-serif;
 }
 
@@ -21,34 +22,39 @@ p {
   font-size: 20px;
 }
 
+a {
+  color: #EE0000;
+}
+
 .special-text {
-  color: #000000;
+  color: #DDDDDD;
   font-weight: bold;
   font-size: 24px;
 }
 
 #main-title {
   text-align: left;
-  border-bottom: 10px solid #111111;
+  border-bottom: 10px solid #777777;
 }
 
 .highlight {
-  color: #5555EE;
+  color: #AAAAAA;
   font-weight: bolder;
   font-style: italic;
 }
 
 button {
-  background-color: #2222BB;
-  color: #FFFFFF;
+  background-color: #FFAA11;
+  color: #222222;
   padding: 10px 20px;
   border: none;
   border-radius: 12px;
   transform: scale(1);
-  transition: transform 0.4s, background-color 0.4s;
+  transition: transform 0.4s, background-color 0.4s, color 0.4s;
 }
 
 button:hover {
+  color: #FFFFFF;
   background-color: #AA3300;
   transform: scale(1.2);
 }
