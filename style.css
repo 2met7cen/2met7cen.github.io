@@ -52,7 +52,7 @@ button:hover {
   transform: scale(1.2);
 }
 
-@keyframes appear {
+/*@keyframes appear {
   from { opacity: 0; }
   t0 { opacity: 1; }
 }
@@ -61,7 +61,7 @@ selection {
   animation: appear 1s ease-in;
 }
 
-/*@media (max-wight: 600px) {
+@media (max-wight: 600px) {
   body {
     padding: 10px;
   }
