@@ -52,7 +52,7 @@ button:hover {
   transform: scale(1.2);
 }
 
-/*@keyframes appear {
+@keyframes appear {
   from { opacity: 0; }
   t0 { opacity: 1; }
 }
