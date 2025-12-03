@@ -1,17 +1,17 @@
 body {
-  background-color: #FFAA11;
+  background-color: #444444;
   font-family: Arial, sans-serif;
 }
 
 header {
-  background-color: #1111AA;
+  background-color: #FFAA11;
   color: #FFFFFF;
   padding: 20px;
 }
 
 footer {
-  background-color: #1111AA;
-  color: #FFFFFF;
+  background-color: #FFAA11;
+  color: #BBBBBB;
   padding: 40px;
   text-align: center;
 }
