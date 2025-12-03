@@ -5,19 +5,19 @@ body {
 
 header {
   background-color: #FFAA11;
-  color: #FFFFFF;
+  color: #222222;
   padding: 20px;
 }
 
 footer {
   background-color: #FFAA11;
-  color: #BBBBBB;
+  color: #222222;
   padding: 40px;
   text-align: center;
 }
 
 p {
-  color: #1100BB;
+  color: #222222;
   font-size: 20px;
 }
 
@@ -33,7 +33,7 @@ p {
 }
 
 .highlight {
-  color: #5555AA;
+  color: #5555EE;
   font-weight: bolder;
   font-style: italic;
 }
