@@ -1,48 +1,37 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт на GitHub</title>
-    <!-- Подключаем внешний CSS файл -->
+    <title>MyGitPage</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Если нужны иконки (Font Awesome) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Шапка -->
-    <header class="header">
-        <nav class="nav">
-            <div class="logo">МойСайт</div>
-            <ul class="nav-list">
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#about">Обо мне</a></li>
-                <li><a href="#projects">Проекты</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
+    <header>
+        <h1>MyGitPage</h1>
     </header>
 
-    <!-- Основной контент -->
-    <main class="main">
-        <section id="home" class="hero">
-            <h1 class="hero-title">Привет, я разработчик</h1>
-            <p class="hero-subtitle">Создаю красивые и функциональные сайты</p>
-            <button class="hero-button">Узнать больше</button>
+    <main>
+        <nav>
+          <a href="#about">About me</a>
+          <a href="projects">My projects</a>
+          <a href="contact">Email</a>
+        </nav>
+        <section id="about">
+          <h2>About me</h2>
+          <ul>
+            <li>Learning web devops</li>
+            <li>Make site on GitHub</li>
+          </ul>
         </section>
-
-        <section id="about" class="about">
-            <h2>Обо мне</h2>
-            <p>Здесь информация о вас...</p>
-        </section>
+        <img src="https://cdna.artstation.com/p/assets/images/images/084/563/918/small/worckshop2met7cen-r-1.jpg?1738679527" alt="Empty">
+        <button onclick="alert('Hello!')">Click here</button>
+        <h2 id="main-title">Hello.</h2>
+        <p class="highlight">Here I'll be sharing my small projects, so I'm really glad you came to see what I'm working on.</p>
+        <p class="special-text">Thank you!</p>
     </main>
 
-    <!-- Подвал -->
-    <footer class="footer">
-        <p>© 2024 Мой сайт. Все права защищены.</p>
+    <footer>
+        <p>Buttom</p>
     </footer>
-
-    <!-- Подключаем JavaScript в конце -->
-    <script src="script.js"></script>
 </body>
 </html>
