@@ -1,37 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>MyGitPage</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Моя первая AE-анимация на сайте</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <style>
+        #animation_box_01 {
+            width: 600px;
+            height: 200px;
+            background-color: lightblue;
+            border: 2px dashed black;
+            margin: 20px auto;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>MyGitPage</h1>
-    </header>
-
-    <main>
-        <nav>
-          <a href="#about">About me</a>
-          <a href="projects">My projects</a>
-          <a href="contact">Email</a>
-        </nav>
-        <section id="about">
-          <h2>About me</h2>
-          <ul>
-            <li>Learning web devops</li>
-            <li>Make site on GitHub</li>
-          </ul>
-        </section>
-        <img src="https://cdna.artstation.com/p/assets/images/images/084/563/918/small/worckshop2met7cen-r-1.jpg?1738679527" alt="Empty">
-        <button onclick="alert('Hello!')">Click here</button>
-        <h2 id="main-title">Hello.</h2>
-        <p class="highlight">Here I'll be sharing my small projects, so I'm really glad you came to see what I'm working on.</p>
-        <p class="special-text">Thank you!</p>
-    </main>
-
-    <footer>
-        <p>Buttom</p>
-    </footer>
+    <div id="animation_box_01"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const animation = lottie.loadAnimation({
+                container: document.getElementById('animation_box_01'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: 'lines_01.json'
+            });
+        });
+    </script>
 </body>
 </html>
