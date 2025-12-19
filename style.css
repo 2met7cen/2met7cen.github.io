@@ -21,11 +21,6 @@ body {
   display: none;
 }
 
-.animation-wrapper {
-    transform: rotate(30deg);
-    transform-origin: center;
-}
-
 #lines_01 {
     height: 100vh;
     width: auto;
