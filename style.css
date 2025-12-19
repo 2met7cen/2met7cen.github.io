@@ -21,7 +21,7 @@ body {
   display: none;
 }
 
-#lines_01 {
+#lines_01 svg{
   height: 100vh;
   width: auto;
   position: absolute;
