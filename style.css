@@ -21,12 +21,15 @@ body {
   display: none;
 }
 
-#lines_01 svg{
-  height: 100vh;
-  width: auto;
-  position: absolute;
-  left: 0;
-  z-index: 1000;
-  transform: rotate(30deg);
-  transform-origin: center;
+.animation-wrapper {
+    transform: rotate(30deg);
+    transform-origin: center;
+}
+
+#lines_01 {
+    height: 100vh;
+    width: auto;
+    position: absolute;
+    left: 0;
+    z-index: 1000;
 }
