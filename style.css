@@ -15,7 +15,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 150, 0.9);
 }
 .content {
   display: none;
