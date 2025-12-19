@@ -26,6 +26,7 @@ body {
   width: auto;
   position: absolute;
   left: 0;
-  background-color: #dddddd;
   z-index: 1000;
+  transform: rotate(45deg);
+  transform-origin: center;
 }
