@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.1/lottie.min.js"></script>
     <title>First page</title>
     <style>
 
@@ -258,7 +259,15 @@
         <div class="container_flex_div">
           <div class="div_01">
             <h2>Flex.</h2>
-            <p class="text_p_01">And this is a simple text. And this is a simple text. And this is a simple text. And this is a simple text. And this is a simple text.</p>
+                                    <script>
+                                    lottie.loadAnimation({
+                                        container: document.getElementById('anim'),
+                                        renderer: 'svg',
+                                        loop: true,
+                                        autoplay: true,
+                                        path: 'lines_01.json'  // просто путь к файлу
+                                    });
+                                    </script>
           </div>
           <div class="div_01">
             <h2>Flex.</h2>
