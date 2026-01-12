@@ -164,11 +164,15 @@
         padding: 0px 10px;
       }
 
+
+
       .grid_sub_item {
-        background-color: #222222;
-        border-radius: 10px;
-        padding: 20px 10px;
-        text-align: left;
+      background-color: #222222;
+      border-radius: 10px;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       }
 
       .gallery {
