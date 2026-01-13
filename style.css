@@ -176,7 +176,7 @@
       padding: 20px 10px;
       }
 
-      .grid_sub_item_content[data-lottie] > div {
+      .grid_sub_item_content[data-lottie] {
       background-color: #ff11aa;
       max-width: 100%;
       max-height: 100%; 
