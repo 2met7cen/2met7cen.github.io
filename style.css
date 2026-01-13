@@ -177,6 +177,7 @@
       }
 
 .grid_sub_item > * {
+     background-color: #999900;
   position: absolute;
   top: 10px;
   left: 10px;
