@@ -95,16 +95,6 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
 
-      .container_flex_div {
-        display: flex;
-        gap: 10px;
-        background-color: #999999;
-        border-radius: 10px;
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0px;
-      }
-
       .div_01 {
         background-color: #FFAA00;
         border-radius: 10px;
@@ -120,11 +110,6 @@
         width: 80%;
         margin: 0 auto;
         text-align: center;
-      }
-
-      .body_box {
-        text-align: center;
-        margin: 0px;
       }
 
       img {
