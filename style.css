@@ -170,7 +170,7 @@
   box-sizing: border-box;
 }
 
-.grid_sub_item_content > [data-lottie],
+.grid_sub_item_content > [data-lottie-loop],
 .grid_sub_item_content svg {
   width: 100%;
   height: 100%;
