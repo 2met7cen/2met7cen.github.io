@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('[data-lottie]').forEach(el => {
+    document.querySelectorAll('[data-lottie-loop]').forEach(el => {
         lottie.loadAnimation({
             container: el,
             renderer: 'svg',
