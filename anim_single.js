@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
             renderer: 'svg',
             loop: false,
             autoplay: true,
-            path: el.dataset.lottie
+            path: el.dataset.lottieSingle
         });
     });
 });
