@@ -80,14 +80,6 @@ a {
   text-align: center;
 }
 
-.button_header_anim_frame {
-  background-color: #444444;
-}
-
-.button_header_anim_frame:hover{
-  background-color: #1111AA;
-}
-
 .button_header_01 {
   background-color: #DD8811;
   border-radius: 10px;
